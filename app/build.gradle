@@ -28,10 +28,12 @@ dependencies {
     def lifecycle_version = "2.2.0"
     def room_version = "2.2.5"
 
-    implementation "androidx.room:room-runtime:$room_version"
-    kapt "androidx.room:room-compiler:$room_version"
-    debugImplementation 'com.amitshekhar.android:debug-db:1.0.6'
-    implementation "android.arch.persistence.room:rxjava2:$room_version"
+    implementation "androidx.room:room-runtime:2.3.0-alpha02"
+    kapt "androidx.room:room-compiler:2.3.0-alpha02"
+    implementation "androidx.room:room-rxjava2:2.3.0-alpha02"
+
+    // Debugging
+    debugImplementation "com.amitshekhar.android:debug-db:1.0.6"
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"

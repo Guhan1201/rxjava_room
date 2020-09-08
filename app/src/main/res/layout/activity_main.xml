@@ -12,9 +12,11 @@
         android:layout_height="wrap_content"
         android:text="@string/hello_msg_from_activity"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.467"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.28" />
 
     <FrameLayout
         android:id="@+id/container_fragment"
@@ -26,5 +28,16 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_message">
 
     </FrameLayout>
+
+    <TextView
+        android:id="@+id/address_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_message" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
